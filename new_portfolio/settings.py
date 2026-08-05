@@ -10,26 +10,31 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
-import sys
-import dj_database_url
-if os.path.isfile('env.py'):
-    import env               # noqa: F401
 from pathlib import Path
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+if os.path.isfile(BASE_DIR / 'env.py'):
+    import env  # noqa: F401
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ro*!i-#!(dyc@%52k-#%d(z)vdp75@^u)v&z0%+_%%hsu!5ulg'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEBUG' in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+
+
+]
 
 
 # Application definition
