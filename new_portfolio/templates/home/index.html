@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container h-100">
+        <div class="row">
+            <div class="col col-md-6 mt-4">
+                <h1 class="display-4 logo-font">Hello, I'm</h1>
+                <p class="h1"> Hana Rubesova</p>
+                <p>Junior Full-Stack Developer with a background in customer service, travel, hospitality and aviation. Career changer and recent graduate of the Level 5 Diploma in Web Application Development with Code Institute.</p>
+                <p>Passionate about building clean, responsive, and user-focused web applications while continuously developing my skills in Python, Django, JavaScript and modern web technologies.</p>
+                <p>Currently seeking a Junior Developer opportunity where I can contribute, learn from experienced developers, and continue to grow as part of a collaborative team while building real-world software solutions.</p>
+            </div>
+            <div class="col col-md-6 mt-4 d-flex align-items-center justify-content-end">
+                <img src="{% static 'images/image-me.jpg' %}" class="img-fluid rounded overflow-hidden  flex-fill image-me" alt="Hana Rubesova">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+{% endblock %}
