@@ -57,6 +57,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-4">
+                
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title text-uppercase">Problem Solver</h5>
@@ -84,26 +85,29 @@
    <div class="container project-cards">
         <div class="row">
             <div class="col-10 mx-auto mt-5">
+                {% for project in projects %}
                 <div class="card mb-3">
                     <div class="row g-0 align-items-center">
-                        <div class="col-md-3 p-3">
-                           <img src="#">
+                        <div class="col-md-2 p-3">
+                           <img src="{{ project.image }}">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-8">
+                            
                             <div class="card-body">
-                                <h3 class="card-title">Project title</h3>
-                                <p class="card-text">Project description goes here.</p>
-                                <p class="card-text"><strong>Tech:</strong> Python, Django, Bootstrap</p>
+                                <h3 class="card-title">{{ project.project_title }}</h3>
+                                <p class="card-text">{{ project.description }}</p>
+                                <p class="card-text"><strong class="tag">Tech: </strong> {{ project.technologies }}</p>
                             </div>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-2">
                             <div class="card-body d-flex flex-column gap-2">
-                                <a href="#" class="btn btn-sm btn-outline-primary">GitHub</a>
-                                <a href="#" class="btn btn-sm btn-outline-secondary">Live Site</a>
+                                <a href="{{ project.github_url }}" class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener">GitHub</a>
+                                <a href="{{ project.live_url }}" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener">Live Site</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </div>
    </div>

@@ -1,12 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from .models import Project
 
 # Create your views here.
 
 
-# def home(request):
-#     return HttpResponse("Hello")
-
-
 def index(request):
-    return render(request, 'home/index.html')
+    projects = Project.objects.all()
+    context = {
+      'projects': projects
+    }
+    return render(request, 'home/index.html', context)
