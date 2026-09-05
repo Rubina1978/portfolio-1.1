@@ -1,0 +1,81 @@
+body {
+ background: #ffffff
+}
+
+
+/* introduction */
+.image-me {
+    max-width: 420px;
+    width: 100%;
+}
+
+.hero-image-column {
+    margin-top: 1.5rem;
+}
+
+.section-intro {
+    max-width: 500px;
+    
+}
+
+/* personality cards */
+.trait-cards {
+    background: #f6f1ea;
+    color: #312020;
+    height: 280px;
+    max-width: 500px;
+    
+}
+
+/* project label */
+.section-label {
+    border: 1px solid #312020;
+    color: #312020;
+    width: 6rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.card {
+border: 1px solid #312020;
+}
+
+.img-fluid {
+    border-radius: 8%;
+    min-width: 100px;
+    min-height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* projects */
+.tech-tag {
+    background: #F6E1C3 ;
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    color: #312020;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .hero-image-column {
+        margin-top: 5rem;  /* was 3rem */
+        padding-top: 5rem; /* was 3rem */
+       
+    }
+   
+}

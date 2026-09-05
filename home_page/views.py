@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render
 from .models import Project
 
 # Create your views here.
@@ -6,6 +6,9 @@ from .models import Project
 
 def index(request):
     projects = Project.objects.all()
+
+    for project in projects:
+        project.technologies = project.technologies.split(",")
     context = {
       'projects': projects
     }
