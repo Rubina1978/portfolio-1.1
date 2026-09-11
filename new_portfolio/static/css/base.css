@@ -18,6 +18,17 @@ body {
     
 }
 
+.custom-btn {
+    border: 1px solid #312020 ;
+    color: #312020;
+    border-radius: 1.5rem;
+}
+
+.custom-btn:hover {
+    background-color: #312020;
+    color: white;
+}
+
 /* personality cards */
 .trait-cards {
     background: #f6f1ea;
@@ -32,7 +43,7 @@ body {
     font-size: 0.9rem;
     margin-bottom: 0.9rem;
 }
-
+ /* trait cards */
 .card-body .card-title span {
     display: flex;
     align-items: center;
@@ -42,7 +53,6 @@ body {
 .card-body h6 {
     font-size: 1.2rem;
     margin-bottom: 0.9rem;
-    
     
 }
 .card-body p {
