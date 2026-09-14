@@ -7,6 +7,7 @@ body {
 .image-me {
     max-width: 420px;
     width: 100%;
+    
 }
 
 html {
@@ -43,9 +44,13 @@ html {
 }
 
 .section-intro {
-    max-width: 500px;
+    max-width: 600px;
+    color: #312020;
     
 }
+
+
+
 
 .custom-btn {
     border: 1px solid #312020 ;
@@ -58,11 +63,10 @@ html {
 }
 
 
-
 .custom-btn:hover {
     background-color: #312020;
     color: white;
-    transition: 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 /* personality cards */
@@ -75,6 +79,8 @@ html {
     
 }
 
+
+
 .card-body h5 {
     font-size: 0.9rem;
     margin-bottom: 0.9rem;
@@ -85,6 +91,8 @@ html {
     align-items: center;
     gap: 0.65rem;
 }
+
+
 
 .card-body h6 {
     
@@ -106,12 +114,15 @@ html {
     border-radius: 8px;
     font-weight: 500;
     letter-spacing: 1px;
+    margin-bottom: 20px;
 }
 .card {
 border: 1px solid #312020;
 }
 
-
+.card-title {
+    font-size: 1.2rem;
+}
 .icon-about {
     margin-right: 0;
     display: inline-block;
@@ -136,6 +147,10 @@ border: 1px solid #312020;
     overflow: hidden;
 }
 /* projects */
+
+.card-title {
+    color:#312020;
+}
 .tech-tag {
     background: #F6E1C3 ;
     display: inline-block;
@@ -161,10 +176,11 @@ border: 1px solid #312020;
 .custom-btn-git:hover, .custom-btn-hire:hover {
     background-color: #bd661a;
     color: white;
-    transition: 0.3s  ease-in-out;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
    
 
-}
+
 
 .custom-btn-live, .custom-btn-see-work {
    
@@ -178,9 +194,14 @@ border: 1px solid #312020;
 .custom-btn-live:hover, .custom-btn-see-work:hover {
    background-color: #f3c383;
    color: #312020;
-   transition: 0.3s  ease-in-out;
+   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
+.card:hover{
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 4px 10px  rgba(0, 0, 0, 0.3);
+}
 
 
 
@@ -197,6 +218,21 @@ border: 1px solid #312020;
        
     }
 
+    .projects-intro h2 {
+        color:#312020;
+    }
+
+    .section-intro {
+        font-size: 1.2rem;
+        color: #312020;
+        font-style: italic;
+        letter-spacing: 1px;
+        padding-top: 8px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
     .card-body {
         font-size: 1.1rem;
     }
@@ -206,6 +242,7 @@ border: 1px solid #312020;
 
    .card-body h5 {
     font-size: 1.1rem;
+    color:#312020;
    }
 
    .trait-cards h6 {
