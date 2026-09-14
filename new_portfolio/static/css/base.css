@@ -9,8 +9,37 @@ body {
     width: 100%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero-image-column {
     margin-top: 1.5rem;
+}
+
+.hr-wrap {
+
+    display: flex;
+    justify-content: center;
+    
+}
+.hr-wrap hr {
+    width: min(80%, 800px);
+    border: 0;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #312020,
+        transparent
+    );
+    opacity: 0.7;
+}
+
+.projects-intro {
+    padding-top: 5rem;
+    scroll-margin-top: 80px;
+    margin-top: 0;
 }
 
 .section-intro {
@@ -22,11 +51,18 @@ body {
     border: 1px solid #312020 ;
     color: #312020;
     border-radius: 1.5rem;
+   font-size: 0.9rem;
+   padding: 0.5rem;
+   font-weight: 500;
+
 }
+
+
 
 .custom-btn:hover {
     background-color: #312020;
     color: white;
+    transition: 0.4s ease-in-out;
 }
 
 /* personality cards */
@@ -51,12 +87,14 @@ body {
 }
 
 .card-body h6 {
-    font-size: 1.2rem;
+    
     margin-bottom: 0.9rem;
+    color:#312020
     
 }
 .card-body p {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+    color:#312020
 }
 
 /* project label */
@@ -90,9 +128,6 @@ border: 1px solid #312020;
     
 }
 
-
-
-
 .img-fluid {
     border-radius: 8%;
     min-width: 100px;
@@ -113,6 +148,38 @@ border: 1px solid #312020;
     
 }
 
+.custom-btn-git, .custom-btn-hire {
+    background-color:  #312020;
+    color: white;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    
+   
+}
+
+.custom-btn-git:hover, .custom-btn-hire:hover {
+    background-color: #bd661a;
+    color: white;
+    transition: 0.3s  ease-in-out;
+   
+
+}
+
+.custom-btn-live, .custom-btn-see-work {
+   
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    background-color: #744d35;
+    color: white;
+    font-weight: 500;
+}
+
+.custom-btn-live:hover, .custom-btn-see-work:hover {
+   background-color: #f3c383;
+   color: #312020;
+   transition: 0.3s  ease-in-out;
+}
 
 
 
@@ -129,5 +196,25 @@ border: 1px solid #312020;
         padding-top: 5rem; /* was 3rem */
        
     }
-   
+
+    .card-body {
+        font-size: 1.1rem;
+    }
+   .card-body p {
+    font-size: 1rem;
+   }
+
+   .card-body h5 {
+    font-size: 1.1rem;
+   }
+
+   .trait-cards h6 {
+    font-size: 1.2rem;
+   }
+
+   .custom-btn {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    
+   }
 }
