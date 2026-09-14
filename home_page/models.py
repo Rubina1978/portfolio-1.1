@@ -14,7 +14,7 @@ class Project(models.Model):
 
 
 class Skill(models.Model):
-    icon = models.ImageField(upload_to="skills")
+    icon = models.ImageField(upload_to="skills", blank=True)
     name = models.CharField(max_length=100)
     category = models.CharField(max_length=100)
     order = models.PositiveIntegerField(default=0)

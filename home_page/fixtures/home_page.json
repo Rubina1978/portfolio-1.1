@@ -1,0 +1,180 @@
+[
+{
+    "model": "home_page.project",
+    "pk": 1,
+    "fields": {
+        "image": "projects/Screenshot_2026-06-26_002248.png",
+        "project_title": "Native Spirit Studio (Full-Stack/Django)",
+        "description": "A full-stack e-commerce project built during my web development studies using Django, Python, PostgreSQL and Bootstrap. It includes product browsing, user accounts, basket management and Stripe payment integration. Deployed live to Heroku.",
+        "technologies": "Django, Python, PostgreSQL, Bootstrap",
+        "github_url": "https://github.com/Rubina1978/native-spirit-studio",
+        "live_url": "https://native-spirit-studio-3057c5b47433.herokuapp.com/"
+    }
+},
+{
+    "model": "home_page.project",
+    "pk": 2,
+    "fields": {
+        "image": "projects/Screenshot_2026-03-04_180103.png",
+        "project_title": "Mood Manager (Winning Hackathon)",
+        "description": "Winning dual-stack hackathon project (Feb 2026) combining frontend UI with data-driven mood tracking and user inputs, built with HTML, CSS, Bootstrap, JavaScript, Python,",
+        "technologies": "Django,  Python, HTML5, CSS3, Bootstrap5,  JavaScript, SQLite, PostgreSQL(production ready)",
+        "github_url": "https://github.com/Rubina1978/mood-manager",
+        "live_url": "https://mood-manager.onrender.com/"
+    }
+},
+{
+    "model": "home_page.project",
+    "pk": 3,
+    "fields": {
+        "image": "projects/Screenshot_2025-09-29_104110.png",
+        "project_title": "WanderBudget (Budget Travel Site)",
+        "description": "A budget travel planning website that helps users find inspiration and plan affordable trips. WanderBudget compiles a sum up of valuable resources to reduce the time and effort spent searching online. By gathering relevant information and external links into one accessible platform, the website serves as both an inspiration hub and a practical toolkit for budget-conscious travelers.",
+        "technologies": "HTML5, CSS3, BOOTSTRAP",
+        "github_url": "https://github.com/Rubina1978/WanderBudget",
+        "live_url": "https://rubina1978.github.io/WanderBudget/"
+    }
+},
+{
+    "model": "home_page.project",
+    "pk": 4,
+    "fields": {
+        "image": "projects/Screenshot_2026-09-02_193651.png",
+        "project_title": "Just Quizly (Quiz Game)",
+        "description": "Just Quizly was inspired by the growing popularity of quizzes as a fun and interactive way to learn and test knowledge.",
+        "technologies": "HTML5, CSS3, Bootstrap, JavaScript, Open Trivia DB API",
+        "github_url": "https://github.com/Rubina1978/Just-Quizly",
+        "live_url": "https://rubina1978.github.io/Just-Quizly/"
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 1,
+    "fields": {
+        "icon": "skills/html.png",
+        "name": "HTML5",
+        "category": "Frontend",
+        "order": 1
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 2,
+    "fields": {
+        "icon": "skills/javascript.png",
+        "name": "JavaScript",
+        "category": "Frontend",
+        "order": 3
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 3,
+    "fields": {
+        "icon": "skills/css.png",
+        "name": "CSS3",
+        "category": "Frontend",
+        "order": 2
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 4,
+    "fields": {
+        "icon": "skills/bootstrap.png",
+        "name": "Bootstrap",
+        "category": "Frontend",
+        "order": 4
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 5,
+    "fields": {
+        "icon": "skills/python.png",
+        "name": "Python",
+        "category": "Backend",
+        "order": 1
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 6,
+    "fields": {
+        "icon": "skills/django.png",
+        "name": "Django",
+        "category": "Backend",
+        "order": 2
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 7,
+    "fields": {
+        "icon": "skills/sqlite-icon.jpg",
+        "name": "SQLite",
+        "category": "Database",
+        "order": 1
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 8,
+    "fields": {
+        "icon": "skills/PosgresSql-icon.jpg",
+        "name": "PostgreSQL",
+        "category": "Database",
+        "order": 2
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 9,
+    "fields": {
+        "icon": "",
+        "name": "Git",
+        "category": "Tools/Services",
+        "order": 2
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 10,
+    "fields": {
+        "icon": "",
+        "name": "GitHub",
+        "category": "Tools/Services",
+        "order": 1
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 11,
+    "fields": {
+        "icon": "",
+        "name": "Heroku",
+        "category": "Tools/Services",
+        "order": 3
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 12,
+    "fields": {
+        "icon": "",
+        "name": "Cloudinary",
+        "category": "Tools/Services",
+        "order": 4
+    }
+},
+{
+    "model": "home_page.skill",
+    "pk": 13,
+    "fields": {
+        "icon": "",
+        "name": "Stripe",
+        "category": "Tools/Services",
+        "order": 5
+    }
+}
+]
