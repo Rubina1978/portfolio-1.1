@@ -15,3 +15,18 @@ def index(request):
       'skills': skills
     }
     return render(request, 'home/index.html', context)
+
+
+def skills_view(request):
+    frontend_skills = Skill.object.filter(category="frontend") 
+    backend_skills = Skill.object.filter(category="backend")
+    database = Skill.object.filter(category="database")
+    tools = Skill.object.filter(category="tools/services")
+
+    context = {
+      'frontend_skills': frontend_skills,
+      'backend_skills': backend_skills,
+      'database': database,
+      'tools': tools
+    }
+    return render(request, 'home/index.html', context)
