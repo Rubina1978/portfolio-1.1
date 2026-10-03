@@ -135,19 +135,42 @@
         </div>
    </div>
 
-    <section class="container mt-5 mb-5">
-        <p class="section-label mt-3">Skills</p>
-        <div class="row g-3">
-            {% for category, skills in skills_by_category.items %}
-                <div class="col-12 col-md-6 col-lg-3">
-                    <h3 class="text-uppercase">{{ category }}</h3>
-                    {% for skill in skills %}
-                        <span class="tech-tag d-inline-block mb-2">{{ skill.name }}</span>
-                    {% empty %}
-                        <p>No {{ category|lower }} skills added yet.</p>
+    <section class="container mt-5 mb-5 pt-4">
+        <p class="section-label text-uppercase mt-5">Skills</p>
+        
+    <h2 class="pt-3">Skills & <em>Technologies</em></h2>
+        <p class="section-intro mb-5">Proficient with frontend development and ability to integrate backend to web applications</p>
+        <div class="row g-4 align-items-stretch">
+            <div class="col-12 col-lg-6">
+                <div class="row g-3 h-100 align-content-start">
+                    {% for category, skills in skills_by_category.items %}
+                        <div class="col-12">
+                            <h3 class=" mb-4">{{ category }}</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% for skill in skills %}
+                                    <span class="tech-tag mb-0">{{ skill.name }}</span>
+                                {% empty %}
+                                    <p class="mb-0">No {{ category|lower }} skills added yet.</p>
+                                {% endfor %}
+                            </div>
+                        </div>
                     {% endfor %}
                 </div>
-            {% endfor %}
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="card  skills-card">
+                    <div class="card-body">
+                
+                        <h4 class="card-title text-uppercase pt-2 pb-2 text-muted mb-3">What I have worked with</h4>
+                        <h6 class="text-uppercase"><em>Full-Stack Development</em></h6>
+                        <p class="card-text pb-3">Django applications with Python, database integration, authentication, CRUD functionality and responsive frontend developmen</p>
+                        <h6 class="text-uppercase small"><em>Real-World Projects</em></h6>
+                        <p class="card-text pb-3">E-commerce, travel planning, mood tracking and interactive quiz applications developed through coursework, personal projects and hackathon experience.</p>
+                        <h6 class="text-uppercase"><em>Deployment & Integration</em></h6>
+                        <p class="card-text pb-3">Working with PostgreSQL, Heroku, Cloudinary and Stripe, as well as integrating external services and APIs into projects.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 {% endblock %}
@@ -155,3 +178,4 @@
 {% block footer %}
 {% endblock %}
 
+0

@@ -203,15 +203,10 @@ border: 1px solid #312020;
     transition: 0.3s ease-in-out;
     box-shadow: 3px 4px 10px  rgba(0, 0, 0, 0.3);
 }
-
-
-
-
-
-
-
-
-
+.skills-card {
+   background-color: #f7ddbb;
+   color: #312020;
+}
 @media (min-width: 992px) {
     .hero-image-column {
         margin-top: 5rem;  /* was 3rem */
