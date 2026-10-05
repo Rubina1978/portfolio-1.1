@@ -31,11 +31,10 @@ DEBUG = os.environ.get('DEBUG', 'False').lower() == 'true'
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    'https://new-portfolio-d388b7be171a.herokuapp.com',
-    
-
-
+    'new-portfolio-d388b7be171a.herokuapp.com',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://*.herokuapp.com']
 
 
 # Application definition
