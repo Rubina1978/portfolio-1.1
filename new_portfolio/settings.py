@@ -31,6 +31,7 @@ DEBUG = 'DEBUG' in os.environ
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
+    'new-portfolio-d388b7be171a.herokuapp.com/'
 
 
 ]
