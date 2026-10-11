@@ -1,10 +1,25 @@
+:root {
+    --primary-font: "Courgette", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+}
+
+
 body {
  background: #ffffff
 }
 
 
 /* introduction */
+
+.display-6 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #744d35;
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+}
 .image-me {
+    margin-top: 10px;
     max-width: 420px;
     width: 100%;
     box-shadow: 0 0 5px 5px  rgba(0, 0, 0, 0.3);
@@ -19,6 +34,17 @@ html {
     margin-top: 1.5rem;
 }
 
+.name, .h4{
+    font-family: var(--primary-font);
+    letter-spacing: 0.1rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color:#312020;
+}
+.intro {
+    font-family: var(--secondary-font);
+    /* font-size: 0.9rem; */
+}
 .hr-wrap {
 
     display: flex;
@@ -38,16 +64,24 @@ html {
     opacity: 0.7;
 }
 
+.icon {
+    width: 35px;
+}
 .projects-intro {
     padding-top: 5rem;
     scroll-margin-top: 80px;
     margin-top: 0;
+    font-family: var(--secondary-font);
 }
 
 .section-intro {
     max-width: 600px;
     color: #312020;
     
+}
+
+.section-intro p {
+    font-family: var(--secondary-font);
 }
 
 
@@ -71,6 +105,8 @@ html {
 }
 
 /* personality cards */
+
+
 .trait-cards {
     background: #f6f1ea;
     color: #312020;
@@ -203,9 +239,45 @@ border: 1px solid #312020;
     transition: 0.3s ease-in-out;
     box-shadow: 3px 4px 10px  rgba(0, 0, 0, 0.3);
 }
+
+/* skills */
+
+.categories {
+    font-family: var(--secondary-font);
+    color: #312020;
+    font-weight: 600;
+   
+}
 .skills-card {
    background-color: #f7ddbb;
    color: #312020;
+}
+
+/* footer */
+
+footer {
+    background: #312020!;
+    
+}
+
+footer p {
+    color: #f3c383;
+    font-size: 0.9rem;
+}
+
+footer img{
+    filter: grayscale(100%) brightness(0.3)
+}
+
+footer h2 {
+    font-size: 1.2rem;
+    color:#F6E1C3
+}
+
+@media (min-width:768px) {
+    .hero-image-column {
+        margin-top: 60px;
+    }
 }
 @media (min-width: 992px) {
     .hero-image-column {
@@ -213,17 +285,34 @@ border: 1px solid #312020;
         padding-top: 5rem; /* was 3rem */
        
     }
+    .display-6 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        
+    }
+    .name {
+        font-size: 3rem;
+    }
 
+    .h4 {
+        font-size: 2rem;
+    }
     .projects-intro h2 {
         color:#312020;
     }
-
     .section-intro {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        font-family: var(--secondary-font);
+        margin-top: 20px;
+        color: #312020;
+    }
+    .intro {
+        font-size: 1.1rem;
         color: #312020;
         font-style: italic;
         letter-spacing: 1px;
         padding-top: 8px;
+        
     }
 
     .card-title {

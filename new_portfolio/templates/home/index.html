@@ -14,11 +14,11 @@
     <div class="container h-100">
         <div class="row">
             <div class="col-12 col-lg-6 mt-5 pt-5 order-2 order-lg-1">
-                <h1 class="display-6 logo-font intro pt-4">Hello, I'm</h1>
-                <em><p class="h1 mb-3"> Hana Rubesova</p></em>
-                <p>Junior Full-Stack Developer with a background in customer service, travel, hospitality and aviation. Career changer and recent graduate of the Level 5 Diploma in Web Application Development with Code Institute.</p>
-                <p>Passionate about building clean, responsive, and user-focused web applications while continuously developing my skills in Python, Django, JavaScript and modern web technologies.</p>
-                <p>Currently seeking a Junior Developer opportunity where I can contribute, learn from experienced developers, and continue to grow as part of a collaborative team while building real-world software solutions.</p>
+                <h1 class="display-6 logo-font text-uppercase pt-4 ">Hello, I'm</h1>
+                <p class="h1 mb-3 name"> Hana Rubesova</p>
+                <p class="intro">Junior Full-Stack Developer with a background in customer service, travel, hospitality and aviation. Career changer and recent graduate of the Level 5 Diploma in Web Application Development with Code Institute.</p>
+                <p class="intro">Passionate about building clean, responsive, and user-focused web applications while continuously developing my skills in Python, Django, JavaScript and modern web technologies.</p>
+                <p class="intro">Currently seeking a Junior Developer opportunity where I can contribute, learn from experienced developers, and continue to grow as part of a collaborative team while building real-world software solutions.</p>
             </div>
             <div class="col-12 col-lg-6 hero-image-column  pt-5 d-flex justify-content-center justify-content-lg-end order-1 order-lg-2">
                 <img src="{% static 'images/image-me.jpg' %}" class="img-fluid rounded overflow-hidden image-me" alt="Hana Rubesova">
@@ -47,7 +47,7 @@
    <div class="container mt-5 pt-5">
         <div class="row">
             <div class="col-12">
-                <p class="h4 logo-font text-uppercase text-center mb-5">More Than Developer</p>
+                <p class="h4 logo-font text-center mb-5">More Than Developer</p>
             </div>
             <div class="col-12 col-md-4 mb-4">
                 <div class="card trait-cards" id='traits'>
@@ -89,9 +89,9 @@
    <section id="projects"  class="projects-intro container mt-5
    ">
 
-    <p  class="section-label mt-3">PROJECTS</p>
+    <p  class="section-label mt-3 text-center">PROJECTS</p>
     
-    <h2 class="pt-3">Websites I've <em>Built</em></h2>
+    <p class="h4 logo-font pt-4">Websites I've Built</p>
 
     <p class="section-intro">
         A selection of projects built throughout my web development journey, from static websites to full-stack applications.
@@ -115,7 +115,7 @@
                         <div class="col-md-7">
                             
                             <div class="card-body">
-                                <h3 class="card-title">{{ project.project_title }}</h3>
+                                <em><h3 class="card-title">{{ project.project_title }}</h3></em>
                                 <p class="card-text">{{ project.description }}</p>
                                 {% for technology in project.technologies %}
                                 <span class="tech-tag">{{ technology }}</span>
@@ -138,14 +138,14 @@
     <section class="container mt-5 mb-5 pt-4">
         <p class="section-label text-uppercase text-center mt-5">Skills</p>
         
-    <h2 class="pt-3">Skills & <em>Technologies</em></h2>
+    <p class="h4 logo-font pt-4">Skills & Technologies</p>
         <p class="section-intro mb-5">Hands-on experience with frontend development and integrating backend functionality into web applications.</p>
         <div class="row g-4 align-items-stretch">
             <div class="col-12 col-lg-6">
                 <div class="row g-3 h-100 align-content-start">
                     {% for category, skills in skills_by_category.items %}
                         <div class="col-12">
-                            <h3 class=" mb-4">{{ category }}</h3>
+                            <h4 class=" mb-4 categories">{{ category }}</h4>
                             <div class="d-flex flex-wrap gap-2">
                                 {% for skill in skills %}
                                     <span class="tech-tag mb-0">{{ skill.name }}</span>
