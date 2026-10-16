@@ -8,22 +8,31 @@ body {
  background: #ffffff
 }
 
+.me {
+    background: linear-gradient(#f7ddbb 0%,  #f6f1ea 60%, #ffff 100%);
+}
 
 /* introduction */
 
 .display-6 {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #744d35;
+    color:#a07f54;
     margin-bottom: 20px;
     font-family: var(--secondary-font);
 }
 .image-me {
     margin-top: 10px;
     max-width: 420px;
+    border-radius: 30px;
     width: 100%;
-    box-shadow: 0 0 5px 5px  rgba(0, 0, 0, 0.3);
+    height: 100%;
+    box-shadow: 0 0 7px 8px  rgba(0, 0, 0, 0.2);
     border: 2px solid white;
+    
+
+
+    
 }
 
 html {
@@ -32,6 +41,7 @@ html {
 
 .hero-image-column {
     margin-top: 1.5rem;
+   
 }
 
 .name, .h4{
@@ -41,6 +51,8 @@ html {
     font-weight: 600;
     color:#312020;
 }
+
+
 .intro, .projects-intro {
     font-family: var(--secondary-font);
     /* font-size: 0.9rem; */
