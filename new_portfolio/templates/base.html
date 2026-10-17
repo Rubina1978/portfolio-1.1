@@ -27,11 +27,12 @@
         {% endblock %}
 
         {% block corejs %}
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-       
+        <script src="{% static 'javascript/index.js' %}" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
         {% endblock %}
-
+        
         {% block extra_js %}
+        
         {% endblock %}
 
         <title>New Portfolio{% block extra_title %}{% endblock %}</title>
@@ -40,9 +41,9 @@
     
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+            <nav class="navbar navbar-expand-lg  fixed-top">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-white" href="{% url 'home' %}">Hana Rubesova</a>
+                    <a class="navbar-brand" href="{% url 'home' %}">Hana Rubesova</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -52,18 +53,19 @@
                         <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About</a>
+                        <a class="nav-link" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link text-white">Contact</a>
+                        <a class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                        <button class="btn btn-secondary"><a href="#" class="text-black">Download CV</a>
+                        <button class="btn btn-primary custom-btn-nav"><a href="#" class="text-black">Download CV</a>
                         </li>
                     </ul>
                     </div>
                 </div>
             </nav>
+    
         </header>
         <main class="flex-grow">
             {% block content %}
