@@ -2,60 +2,131 @@
     --primary-font: "Courgette", sans-serif;
     --secondary-font: "Lato", sans-serif;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
+}
 
 body {
  background: #ffffff
+
+}
+.container-fluid {
+    padding: 0 1.5rem;
+    width: 100%;
+    
 }
 
-.navbar {
-    
-  background: transparent;
-  transition: background-color 0.3s ease;
-  height: 80px;
+.container {
+    padding: 2rem ;
 }
+/* navbar */
+.navbar {
+  background: transparent;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  min-height: 62px;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
 .navbar.scrolled {
-  background:rgb(246, 225, 195) ;
+  background: rgb(246, 225, 195);
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
     color: #312020;
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 700;
     font-family: var(--secondary-font);
     font-style: italic;
     letter-spacing: 0.1rem;
-    margin-left: 40px;
+    
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-left: auto;
+    
+   
+}
+
+
+
+.nav-item {
+    display: flex;
+    align-items: center;
 }
 
 .nav-link {
- background-color: #F6E1C3;
- color: #312020;
- font-size: 1.2rem;
- width: 100%;
- max-width: 300px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    color: #312020;
+}
 
- 
+.custom-btn-nav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: #312020;
+    color: #f6f1ea;
+    border-radius: 50px;
+    padding: 0.6rem 0.9rem;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-link:hover {
+    color:#bd661a;
 }
 
 
 .nav-link .active {
     color: #bd661a;
 }
+
+/* introduction */
 .me {
     background: linear-gradient(#f7ddbb 0%,  #f6f1ea 60%, #ffff 100%);
 }
 
-/* introduction */
-
 .display-6 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     color:#a07f54;
     margin-bottom: 20px;
     font-family: var(--secondary-font);
     
+}
+
+ .active {
+    color:#d0680c!important;
+    font-weight: 500;
+}
+
+
+.custom-btn-nav:hover {
+    background-color: #bd661a;
+    border:1px solid#744d35
+}
+.custom-btn-nav a {
+    text-decoration: none;
+    color: #F6E1C3;
+    letter-spacing: 0.04rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+.fa-file-arrow-down {
+    color:#f7ddbb;
 }
 .image-me {
     margin-top: 10px;
@@ -428,14 +499,84 @@ footer .custom-btn:hover {
   display: block;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.9px) {
   .action-buttons {
     flex-direction: row;
     justify-content: center;
   }
+
+  .navbar {
+    padding-bottom: 0;
+  }
+
+  .navbar .menu-open {
+    background: rgb(246, 225, 195);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .navbar-collapse {
+    margin-top: 0;
+    background: white;
+    border-radius: 0 0 12px 12px;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  
+
+  
+  .navbar-toggler[aria-expanded="true"] ~ .navbar-collapse {
+    background-color:  rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 0 0 12px 12px;
+
+    
+    padding: 1.6rem 1rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .custom-btn-nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+   .navbar-collapse.show {
+        background-color:#F6E1C3;
+        padding: 0.5rem;
+        border-radius: 0 0 0.5rem 0.5rem;
+        
+    }
 }
 
+
+
+
+
 @media (min-width:768px) {
+   .navbar-brand {
+        font-size: 1.5rem;
+        margin-left: 50px;
+    } 
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+    
     .hero-image-column {
         margin-top: 60px;
     }
@@ -463,8 +604,38 @@ footer .custom-btn:hover {
  
     }
 
+    .card.body {
+        display:flex;
+        flex-direction: column;
+    }
 }
 @media (min-width: 992px) {
+    
+    .container {
+        width: 100%;
+        padding: 2rem 0.5rem;
+        margin: auto;
+
+        
+    }
+    .navbar {
+        
+         padding: 0.9rem 0;
+    }
+
+    /* .navbar ul {
+        padding: 0;
+        display: flex;
+       
+         */
+    }
+    .navbar-brand {
+        font-size: 1.8rem;
+        margin: 1rem;
+        
+       
+    }
+    
     .hero-image-column {
         margin-top: 5rem;  /* was 3rem */
         padding-top: 5rem; /* was 3rem */
