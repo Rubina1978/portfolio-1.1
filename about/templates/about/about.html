@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="intro-about">
+    <div class="about-container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 hero-image-column pt-5 d-flex justify-content-center justify-content-lg-start">
+                {% if about_me.my_image %}
+                    <img src="{{ about_me.my_image.url }}"
+                         alt="Photo of me"
+                         class="profile-image">
+                {% endif %}
+            </div>
+
+            <div class="col-12 col-lg-6 mt-5 pt-5">
+                <h1>{{ about_me.heading }}</h1>
+                <p>{{ about_me.introduction|linebreaks }}</p>
+
+                <a href="#"
+                   class="btn custom-btn-hire">
+                    {{ about_me.contact_button_text }}
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+
+                {% if about_me.LinkedIn_url %}
+                    <a href="{{ about_me.LinkedIn_url }}"
+                       class="btn custom-btn-linkedin"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
