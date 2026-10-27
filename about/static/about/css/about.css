@@ -1,0 +1,42 @@
+:root {
+    --primary-font: "Courgette", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+
+.intro-about {
+    background: linear-gradient(#F6E1C3 0%,  #f6f1ea 60%, #ffff 100%);
+  
+}
+
+.hero-image-column {
+    min-width: 0;
+}
+
+.profile-image {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.intro-about .row {
+    
+    align-items: center;
+    
+}
+
+@media (min-width: 992px) {
+    .intro-about .row {
+        gap: 0;
+    }
+   
+}

@@ -152,7 +152,7 @@ body {
 .fa-file-arrow-down {
     color: #F6E1C3;
 }
-.image-me {
+.image-me, .profile-image {
     margin-top: 10px;
     max-width: 420px;
     border-radius: 30px;
