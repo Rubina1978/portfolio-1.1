@@ -19,23 +19,32 @@
 
             <div class="col-12 col-lg-6 mt-5 pt-5">
                 <h1>{{ about_me.heading }}</h1>
-                <p>{{ about_me.introduction|linebreaks }}</p>
+                <p>{{ about_me.introduction|safe }}</p>
 
                 <a href="#"
-                   class="btn custom-btn-hire">
+                   class="btn custom-btn-hire mt-4">
                     {{ about_me.contact_button_text }}
                     <i class="fa-solid fa-angle-right"></i>
                 </a>
 
                 {% if about_me.LinkedIn_url %}
                     <a href="{{ about_me.LinkedIn_url }}"
-                       class="btn custom-btn-linkedin"
+                       class="btn custom-btn-linkedin mt-4"
                        target="_blank"
                        rel="noopener noreferrer">
                         LinkedIn
                     </a>
                 {% endif %}
             </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="col-12">
+            <h2 class="my-journey text-center mt-4 mb-4">My Journey</h2>
+            <p class="h5 journey subtitle text-center mb-5"> From Customer Service to Software Development</p>
+            <p class="my-journey"> {{ about_me.my_journey|safe }}</p>
         </div>
     </div>
 </section>

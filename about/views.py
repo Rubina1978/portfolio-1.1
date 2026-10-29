@@ -1,27 +1,28 @@
 from django.shortcuts import render
-from .models import About, keyFacts
+from .models import About
 
 # Create your views here.
 
 
 def about_me(request):
     about_me = About.objects.first()
-    key_facts = keyFacts.objects.all()
 
-    highlighted_sentences = []
+    what_i_bring_cards = []
 
-    if about_me and about_me.highlighted_sentences:
-        sentences = about_me.highlighted_sentences.split("|")
+    if about_me and about_me.what_i_bring:
+        cards = about_me.what_i_bring.splitlines()
 
-        for sentence in sentences:
-            sentence = sentence.strip()
+        for card in cards:
+            parts = card.split("|", 1)
 
-            if sentence:
-                highlighted_sentences.append(sentence)
+            if len(parts) == 2:
+                what_i_bring_cards.append(
+                    {"title": parts[0].strip(),
+                        "description": parts[1].strip()})
 
     return render(
         request, "about/about.html", {
             "about_me": about_me,
-            "key_facts": key_facts,
-            "highlighted_sentences": highlighted_sentences
+            "what_i_bring_cards": what_i_bring_cards
+
         })

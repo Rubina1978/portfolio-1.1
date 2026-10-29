@@ -10,9 +10,7 @@ class About(models.Model):
     my_image = CloudinaryField("image", blank=True)
     introduction = models.TextField()
     my_journey = models.TextField(blank=True)
-    highlighted_sentences = models.TextField(blank=True)
 
-    who_i_am = models.TextField(blank=True)
     what_i_bring = models.TextField(blank=True)
     my_interests_passions = models.TextField(blank=True)
 
@@ -26,9 +24,3 @@ class About(models.Model):
         return self.heading
 
 
-class keyFacts (models.Model):
-    title = models.CharField(max_length=150, blank=True)
-    description = models.TextField(blank=True)
-
-    def __str__(self):
-        return self.title
