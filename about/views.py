@@ -23,6 +23,6 @@ def about_me(request):
     return render(
         request, "about/about.html", {
             "about_me": about_me,
-            "what_i_bring_cards": what_i_bring_cards
+            "what_i_bring_cards": what_i_bring_cards,
 
         })

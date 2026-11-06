@@ -15,29 +15,58 @@
   
 }
 
+.intro-about .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
 
 .hero-image-column {
     min-width: 0;
 }
 
-.profile-image {
+/* .profile-image {
     display: block;
     width: 100%;
     max-width: 420px;
     height: auto;
     object-fit: cover;
     border-radius: 12px;
-}
+} */
 
 .intro-about .row {
-    
+    margin-left: 0;
+    margin-right: 0;
     align-items: center;
-    
 }
+
+.intro-image-column,
+.intro-text-column {
+    padding: 0 0.5rem;
+}
+
+.intro-text-column {
+    margin-top: 2rem;
+    padding-top: 0;
+}
+
+
 
 @media (min-width: 992px) {
     .intro-about .row {
         gap: 0;
     }
+
+    .intro-text-column {
+        margin-top: 0;
+        padding-top: 0;
+    }
+   
+    .card-what-i-bring {
+        width: 100%;
+    }
+
    
 }
