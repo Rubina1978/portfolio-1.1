@@ -7,4 +7,5 @@ from django_summernote.admin import SummernoteModelAdmin
 class AboutAdmin(SummernoteModelAdmin):
     summernote_fields = ('introduction',
                          'my_journey',
+                         'looking_for',
                          )

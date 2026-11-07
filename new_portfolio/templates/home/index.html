@@ -19,7 +19,6 @@
                 <p class="h1 mb-3 name"> Hana Rubesova</p>
                 <p class="intro"><strong>Junior Full-Stack Developer</strong> with a background in customer service, travel, hospitality and aviation. Career changer and recent graduate of the Level 5 Diploma in Web Application Development with Code Institute.</p>
                 <p class="intro">Passionate about building clean, responsive, and user-focused web applications while continuously developing my skills in Python, Django, JavaScript and modern web technologies.</p>
-                <p class="intro">Currently seeking a Junior Developer opportunity where I can contribute, learn from experienced developers, and continue to grow as part of a collaborative team while building real-world software solutions.</p>
             </div>
             <div class="col-12 col-lg-6 hero-image-column  pt-5 d-flex justify-content-center justify-content-lg-end order-1 order-lg-2">
                 <img src="{% static 'images/image-me.jpg' %}" class=" overflow-hidden image-me" alt="Hana Rubesova">
@@ -104,7 +103,7 @@
 </section>
    <div class="container project-cards">
         <div class="row">
-            <div class="col-12 col-lg-10 mx-auto mt-5 ">
+            <div class="col-12 col-lg-11 mx-auto mt-5 ">
                 {% for project in projects %}
     
                 <div class="card mb-3">
@@ -142,7 +141,7 @@
         </div>
    </div>
 
-    <section class="container mt-5 mb-5 pt-5">
+    <section class="container mt-5 mb-5 pt-5 skills-section">
         <p class="section-label text-uppercase text-center mt-5">Skills</p>
         
     <p class="h4 logo-font pt-4">Skills & Technologies</p>
@@ -153,7 +152,7 @@
                     {% for category, skills in skills_by_category.items %}
                         <div class="col-12">
                             <h4 class=" mb-4 categories">{{ category }}</h4>
-                            <div class="d-flex flex-wrap gap-2">
+                            <div class="d-flex flex-wrap gap-2 skills-tags">
                                 {% for skill in skills %}
                                     <span class="tech-tag mb-0">{{ skill.name }}</span>
                                 {% empty %}

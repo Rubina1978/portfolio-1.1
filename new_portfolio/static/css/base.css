@@ -449,6 +449,14 @@ transition: 0.3s ease-in-out;
    color: #312020;
 }
 
+.skills-section .skills-tags .tech-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5.5rem;
+    text-align: center;
+}
+
 /* footer */
 
 footer {
@@ -524,6 +532,26 @@ footer .custom-btn:hover {
 }
 
 @media (max-width: 767.9px) {
+    .action-buttons .custom-btn-git,
+    .action-buttons .custom-btn-live {
+        box-sizing: border-box;
+        width: 7rem;
+        max-width: 7rem;
+        flex: 0 0 7rem;
+    }
+
+    .project-cards .tech-tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 7rem;
+        text-align: center;
+    }
+
+    .skills-section .skills-tags .tech-tag {
+        min-width: 5rem;
+    }
+
   .action-buttons {
     flex-direction: row;
     justify-content: center;
