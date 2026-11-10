@@ -222,6 +222,13 @@ html {
     scroll-margin-top: 80px;
     margin-top: 0;
     font-family: var(--secondary-font);
+    
+}
+.project-intro .card {
+    border-radius: 30px;
+}
+.card-title {
+    font-weight: 600;
 }
 
 .section-intro {
@@ -380,6 +387,7 @@ html {
 .card {
 border: 1px solid #312020;
 transition: 0.3s ease-in-out;
+border-radius: 30px;
 }
 
 .card-title {
@@ -443,10 +451,35 @@ transition: 0.3s ease-in-out;
 
 .skills p {
     font-family: var(--secondary-font);
+    font-weight: 500;
 }
 .skills-card {
    background-color: #f7ddbb;
    color: #312020;
+   font-family: var(--secondary-font);
+}
+
+.skills-card .card-body {
+    padding: 2rem;
+}
+
+.skills-card .card-text {
+    text-align: justify;
+    
+}
+.skills-card h4 {
+    font-family: var(--primary-font);
+    letter-spacing: 0.05rem;
+    color: #312020;
+}
+.skills-card h6 {
+    font-weight: 600;
+    font-family: var(--secondary-font);
+   
+}
+.skills-card p {
+    font-family: var(--secondary-font);
+    
 }
 
 .skills-section .skills-tags .tech-tag {
@@ -551,6 +584,7 @@ footer .custom-btn:hover {
     .skills-section .skills-tags .tech-tag {
         min-width: 5rem;
     }
+    
 
   .action-buttons {
     flex-direction: row;

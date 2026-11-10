@@ -1,185 +1,267 @@
-{% extends "base.html" %}
-{% load static %}
-
-
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %} {% block content %}
 <section class="me">
-    <div class="container h-100">
-        <div class="row">
-            <div class="col-12 col-lg-6 mt-5 pt-5 order-2 order-lg-1">
-                <h1 class="display-6 logo-font text-uppercase pt-4 gradient-text">Hello, I'm</h1>
-                <p class="h1 mb-3 name"> Hana Rubesova</p>
-                <p class="intro"><strong>Junior Full-Stack Developer</strong> with a background in customer service, travel, hospitality and aviation. Career changer and recent graduate of the Level 5 Diploma in Web Application Development with Code Institute.</p>
-                <p class="intro">Passionate about building clean, responsive, and user-focused web applications while continuously developing my skills in Python, Django, JavaScript and modern web technologies.</p>
-            </div>
-            <div class="col-12 col-lg-6 hero-image-column  pt-5 d-flex justify-content-center justify-content-lg-end order-1 order-lg-2">
-                <img src="{% static 'images/image-me.jpg' %}" class=" overflow-hidden image-me" alt="Hana Rubesova">
-            </div>
-        </div>
-        <div class="d-flex flex-wrap align-items-center  gap-2 mt-3">
-            <a href="#" class="btn custom-btn-hire text-center text-center">Hire me<i class="fa-solid fa-angle-right"></i></a>
-            <a href="#projects" class="btn custom-btn-see-work">See my work</a>
-        </div>
-         <div class="mt-5 d-flex align-items-center gap-2 text-muted">
-            <a href="https://github.com/Rubina1978" target="_blank" rel="noopener">
-                <img src="{% static 'images/icons8-github-48.png' %}" class="icon-1" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com/in/hana-rubesova-6338b9104" target="_blank" rel="noopener">
-                <img src="{% static 'images/icons8-linkedin-circled-48.png' %}" class="icon" alt="LinkedIn">
-            </a>
-            <a href="mailto:rubesovah@seznam.cz" target="_blank" rel="noopener">
-              <img src="{% static 'images/icons8-email-48.png'%}" class="icon" alt="email">
-            </a>
-            <span class="mx-2">|</span>
-            <span>Find me online</span>
-        </div>
+  <div class="container h-100">
+    <div class="row">
+      <div class="col-12 col-lg-6 mt-5 pt-5 order-2 order-lg-1">
+        <h1 class="display-6 logo-font text-uppercase pt-4 gradient-text">
+          Hello, I'm
+        </h1>
+        <p class="h1 mb-3 name">Hana Rubesova</p>
+        <p class="intro">
+          <strong>Junior Full-Stack Developer</strong> with a background in
+          customer service, travel, hospitality and aviation.
+          <strong
+            >Career changer and recent graduate of the Level 5 Diploma in Web
+            Application Development with Code Institute.</strong
+          >
+        </p>
+        <p class="intro">
+          Passionate about building clean, responsive, and user-focused web
+          applications while continuously developing my skills in Python,
+          Django, JavaScript and modern web technologies.
+        </p>
+      </div>
+      <div
+        class="col-12 col-lg-6 hero-image-column pt-5 d-flex justify-content-center justify-content-lg-end order-1 order-lg-2"
+      >
+        <img
+          src="{% static 'images/image-me.jpg' %}"
+          class="overflow-hidden image-me"
+          alt="Hana Rubesova"
+        />
+      </div>
     </div>
+    <div class="d-flex flex-wrap align-items-center gap-2 mt-3">
+      <a href="#" class="btn custom-btn-hire text-center text-center"
+        >Hire me<i class="fa-solid fa-angle-right"></i
+      ></a>
+      <a href="#projects" class="btn custom-btn-see-work">See my work</a>
+    </div>
+    <div class="mt-5 d-flex align-items-center gap-2 text-muted">
+      <a href="https://github.com/Rubina1978" target="_blank" rel="noopener">
+        <img
+          src="{% static 'images/icons8-github-48.png' %}"
+          class="icon-1"
+          alt="GitHub"
+        />
+      </a>
+      <a
+        href="https://linkedin.com/in/hana-rubesova-6338b9104"
+        target="_blank"
+        rel="noopener"
+      >
+        <img
+          src="{% static 'images/icons8-linkedin-circled-48.png' %}"
+          class="icon"
+          alt="LinkedIn"
+        />
+      </a>
+      <a href="mailto:rubesovah@seznam.cz" target="_blank" rel="noopener">
+        <img
+          src="{% static 'images/icons8-email-48.png'%}"
+          class="icon"
+          alt="email"
+        />
+      </a>
+      <span class="mx-2">|</span>
+      <span>Find me online</span>
+    </div>
+  </div>
 
-    <div class="hr-wrap mt-4">
-    <hr>
-</div>
-  </section> 
-
-   <div class="container mt-5 pt-4">
-        <div class="row">
-            <div class="col-12">
-                <p class="h4 logo-font text-center mb-5">More Than Developer</p>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card trait-cards" id='traits'>
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase pt-2 pb-2 text-muted"><span><i class="fa fa-compass icon-about" aria-hidden="true"></i>Career Changer</span></h5>
-                        <h6><em>Bringing experience from another perspective</em></h6>
-                        <p class="card-text pt-2 pb-3">After a decade in travel and customer service, I transitioned into software development and bring a strong focus on people, communication and adaptability.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                
-                <div class="card trait-cards" id='traits'>
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase pt-2 pb-2 text-muted"><span><i class="fa fa-cubes icon-about" aria-hidden="true"></i>Problem Solver</span></h5>
-                        <h6><em>Curious about how things work</em></h6>
-                        <p class="card-text">I enjoy breaking complex problems into manageable steps, exploring different approaches and finding practical solutions.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card trait-cards" id='traits'>
-                    <div class="card-body">
-                        <h5 class="card-title text-uppercase pt-2 pb-2 text-muted"><span><i class="fa fa-lightbulb-o icon-about" aria-hidden="true"></i>Continuous Learner</span></h5>
-                        <h6><em>Always developing and improving</em></h6>
-                        <p class="card-text pb-3">From completing my Level 5 Diploma to building personal projects, I enjoy learning new technologies and putting them into practice.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="text-center mt-5">
-                    <a href="#" class="btn btn-lg btn-outline custom-btn">Get to know Hana<i class="fa-solid fa-angle-right"></i></a>  
-                </div>
-            </div>
-        </div>
-   </div>
-
-
-   <section id="projects"  class="projects-intro container mt-4
-   ">
-
-    <p  class="section-label mt-3 d-flex justify-content-center">PROJECTS</p>
-    
-    <p class="h4 logo-font pt-4">Websites I've Built</p>
-
-    <p class="section-intro">
-        A selection of projects built throughout my web development journey, from static websites to full-stack applications.
-    </p>
+  <div class="hr-wrap mt-4">
+    <hr />
+  </div>
 </section>
-   <div class="container project-cards">
-        <div class="row">
-            <div class="col-12 col-lg-11 mx-auto mt-5 ">
-                {% for project in projects %}
-    
-                <div class="card mb-3">
-                    <div class="row g-0 align-items-center">
 
-                        <div class="col-12 col-md-3 p-3 d-flex align-items-center justify-content-center">
-    {% if project.image %}
-        <img src="{{ project.image.url }}"
-             class="img-fluid project-image"
-             alt="{{ project.project_title }}">
-    {% endif %}
+<div class="container mt-5 pt-4">
+  <div class="row">
+    <div class="col-12">
+      <p class="h4 logo-font text-center mb-5">More Than Developer</p>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="card trait-cards" id="traits">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase pt-2 pb-2 text-muted">
+            <span
+              ><i class="fa fa-compass icon-about" aria-hidden="true"></i>Career
+              Changer</span
+            >
+          </h5>
+          <h6><em>Bringing experience from another perspective</em></h6>
+          <p class="card-text pt-2 pb-3">
+            After a decade in travel and customer service, I transitioned into
+            software development and bring a strong focus on people,
+            communication and adaptability.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="card trait-cards" id="traits">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase pt-2 pb-2 text-muted">
+            <span
+              ><i class="fa fa-cubes icon-about" aria-hidden="true"></i>Problem
+              Solver</span
+            >
+          </h5>
+          <h6><em>Curious about how things work</em></h6>
+          <p class="card-text">
+            I enjoy breaking complex problems into manageable steps, exploring
+            different approaches and finding practical solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="card trait-cards" id="traits">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase pt-2 pb-2 text-muted">
+            <span
+              ><i class="fa fa-lightbulb-o icon-about" aria-hidden="true"></i
+              >Continuous Learner</span
+            >
+          </h5>
+          <h6><em>Always developing and improving</em></h6>
+          <p class="card-text pb-3">
+            From completing my Level 5 Diploma to building personal projects, I
+            enjoy learning new technologies and putting them into practice.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="text-center mt-5">
+        <a href="#" class="btn btn-lg btn-outline custom-btn"
+          >Get to know Hana<i class="fa-solid fa-angle-right"></i
+        ></a>
+      </div>
+    </div>
+  </div>
 </div>
-                        <div class="col-md-7">
-                            
-                            <div class="card-body">
-                                <em><h3 class="card-title">{{ project.project_title }}</h3></em>
-                                <p class="card-text">{{ project.description }}</p>
-                                {% for technology in project.technologies %}
-                                <span class="tech-tag">{{ technology }}</span>
-                                {% endfor %}
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="card-body">
-                                <div class="action-buttons ">
-                                <a href="{{ project.github_url }}" class="btn btn-sm custom-btn-git" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a>
-                                <a href="{{ project.live_url }}" class="btn btn-sm custom-btn-live" target="_blank" rel="noopener"><i class="fa-solid fa-link"></i>Live</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-   </div>
 
-    <section class="container mt-5 mb-5 pt-5 skills-section">
-        <p class="section-label text-uppercase text-center mt-5">Skills</p>
-        
-    <p class="h4 logo-font pt-4">Skills & Technologies</p>
-        <p class="section-intro mb-5">Hands-on experience with frontend development and integrating backend functionality into web applications.</p>
-        <div class="row g-4 align-items-stretch">
-            <div class="col-12 col-lg-6">
-                <div class="row g-3 h-100 align-content-start">
-                    {% for category, skills in skills_by_category.items %}
-                        <div class="col-12">
-                            <h4 class=" mb-4 categories">{{ category }}</h4>
-                            <div class="d-flex flex-wrap gap-2 skills-tags">
-                                {% for skill in skills %}
-                                    <span class="tech-tag mb-0">{{ skill.name }}</span>
-                                {% empty %}
-                                    <p class="mb-0">No {{ category|lower }} skills added yet.</p>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
+<section id="projects" class="projects-intro container mt-4">
+  <p class="section-label mt-3 d-flex justify-content-center">PROJECTS</p>
+
+  <p class="h4 logo-font pt-4">Websites I've Built</p>
+
+  <p class="section-intro">
+    A selection of projects built throughout my web development journey, from
+    static websites to full-stack applications.
+  </p>
+  <div class="container project-cards">
+  <div class="row">
+    <div class="col-12 col-lg-11 mx-auto mt-5">
+      {% for project in projects %}
+
+      <div class="card mb-3">
+        <div class="row g-0 align-items-center">
+          <div
+            class="col-12 col-md-3 p-3 d-flex align-items-center justify-content-center"
+          >
+            {% if project.image %}
+            <img
+              src="{{ project.image.url }}"
+              class="img-fluid project-image"
+              alt="{{ project.project_title }}"
+            />
+            {% endif %}
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <em><h3 class="card-title">{{ project.project_title }}</h3></em>
+              <p class="card-text">{{ project.description }}</p>
+              {% for technology in project.technologies %}
+              <span class="tech-tag">{{ technology }}</span>
+              {% endfor %}
             </div>
-            <div class="col-12 col-lg-6 mb-5">
-                <div class="card  skills-card">
-                    <div class="card-body">
-                
-                        <h4 class="card-title text-uppercase pt-2 pb-2 text-muted mb-3">What I have worked with</h4>
-                        <h6 class="text-uppercase"><em>Full-Stack Development</em></h6>
-                        <p class="card-text pb-3">Django applications with Python, database integration, authentication, CRUD functionality and responsive frontend development</p>
-                        <h6 class="text-uppercase small"><em>Real-World Projects</em></h6>
-                        <p class="card-text pb-3">E-commerce, travel planning, mood tracking and interactive quiz applications developed through coursework, personal projects and hackathon experience.</p>
-                        <h6 class="text-uppercase"><em>Deployment & Integration</em></h6>
-                        <p class="card-text pb-3">Experience integrating services such as Heroku, Cloudinary and Stripe into web projects.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="col-md-2">
+            <div class="card-body">
+              <div class="action-buttons">
+                <a
+                  href="{{ project.github_url }}"
+                  class="btn btn-sm custom-btn-git"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-brands fa-github"></i>GitHub</a
+                >
+                <a
+                  href="{{ project.live_url }}"
+                  class="btn btn-sm custom-btn-live"
+                  target="_blank"
+                  rel="noopener"
+                  ><i class="fa-solid fa-link"></i>Live</a
+                >
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="container mt-5 mb-5 pt-5 skills-section">
+  <p class="section-label text-uppercase text-center mt-5">Skills</p>
+
+  <p class="h4 logo-font pt-4">Skills & Technologies</p>
+  <p class="section-intro mb-5">
+    Hands-on experience with frontend development and integrating backend
+    functionality into web applications.
+  </p>
+  <div class="row g-4 align-items-stretch">
+    <div class="col-12 col-lg-6">
+      <div class="row g-3 h-100 align-content-start">
+        {% for category, skills in skills_by_category.items %}
+        <div class="col-12">
+          <h4 class="mb-4 categories">{{ category }}</h4>
+          <div class="d-flex flex-wrap gap-2 skills-tags">
+            {% for skill in skills %}
+            <span class="tech-tag mb-0">{{ skill.name }}</span>
+            {% empty %}
+            <p class="mb-0">No {{ category|lower }} skills added yet.</p>
+            {% endfor %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 mb-5">
+      <div class="card skills-card">
+        <div class="card-body">
+          <h4 class="card-title text-uppercase pt-2 pb-2 text-muted mb-3 ">
+            What I have worked with
+          </h4>
+          <h6 class="text-uppercase"><em>Full-Stack Development</em></h6>
+          <p class="card-text pb-3">
+            Django applications with Python, database integration,
+            authentication, CRUD functionality and responsive frontend
+            development
+          </p>
+          <h6 class="text-uppercase small"><em>Real-World Projects</em></h6>
+          <p class="card-text pb-3">
+            E-commerce, travel planning, mood tracking and interactive quiz
+            applications developed through coursework, personal projects and
+            hackathon experience.
+          </p>
+          <h6 class="text-uppercase"><em>Deployment & Integration</em></h6>
+          <p class="card-text pb-3">
+            Experience integrating services such as Heroku, Cloudinary and
+            Stripe into web projects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}
-
-
-
