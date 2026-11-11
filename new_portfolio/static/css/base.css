@@ -48,27 +48,14 @@ body {
 }
 
 .navbar-nav {
-    /* display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    margin-left: auto; */
-   
     flex-direction: column;
-        align-items: stretch;
-        margin: 0;
-        padding: 0;
-        gap: 1rem;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
     }
-    
-   
-
-
-
 
 .nav-item {
-    /* display: flex;
-    align-items: center; */
-
     width: 100;
 }
 
@@ -188,7 +175,6 @@ html {
 .intro, .projects-intro {
     font-family: var(--secondary-font);
     
-    /* font-size: 0.9rem; */
 }
 .hr-wrap {
 

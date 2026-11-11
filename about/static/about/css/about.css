@@ -9,7 +9,18 @@
     box-sizing: border-box;
 }
  
+h1 {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: #312020;
+    
+}
 
+p {
+    font-family: var(--secondary-font);
+    font-style: italic;
+    color:#312020;
+}
 .intro-about {
     background: linear-gradient(#F6E1C3 0%,  #f6f1ea 60%, #ffff 100%);
   
@@ -27,14 +38,6 @@
     min-width: 0;
 }
 
-/* .profile-image {
-    display: block;
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 12px;
-} */
 
 .intro-about .row {
     margin-left: 0;
@@ -50,11 +53,21 @@
 .intro-text-column {
     margin-top: 2rem;
     padding-top: 0;
+     font-size: 1.1rem;
 }
 
+.card-what-i-bring {
+background-color: #f6f1ea;
+color: #312020;
+justify-content: center;
+align-items: center;
+padding: 1rem;
+}
 
-
-
+.card-what-i-bring h4 {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
 @media (min-width: 992px) {
     .intro-about .row {
         gap: 0;
@@ -66,7 +79,11 @@
     }
    
     .card-what-i-bring {
-        width: 100%;
+    background-color: #f6f1ea;
+    color: #312020;
+    min-height: 200px;
+    height: 100%;
+     
     }
 
    
