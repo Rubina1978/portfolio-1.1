@@ -68,6 +68,26 @@ padding: 1rem;
     margin-bottom: 1rem;
     font-style: italic;
 }
+
+/* my journey part */
+
+.timeline {
+    position: relative;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #c9b8aa;
+}
+
+
 @media (min-width: 992px) {
     .intro-about .row {
         gap: 0;

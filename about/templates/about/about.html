@@ -55,12 +55,16 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="container">
-        <div class="col-12">
+<section class="journey-section">
+    <div class="container d-flex justify-content-center">
+        <div class="col-12 col-md-8">
             <h2 class="my-journey text-center mt-4 mb-4">My Journey</h2>
-            <p class="h5 journey subtitle text-center mb-5"> From Customer Service to Software Development</p>
-            <p class="my-journey"> {{ about_me.my_journey|safe }}</p>
+            <div class="timeline">
+                <div class="timeline-content">
+                    <p class="h5 journey subtitle text-center mb-5"> From Customer Service to Software Development</p>
+                    <p class="my-journey"> {{ about_me.my_journey|safe }}</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
