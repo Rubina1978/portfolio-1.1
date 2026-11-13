@@ -71,6 +71,22 @@ padding: 1rem;
 
 /* my journey part */
 
+.section-label-about {
+    font-weight: 600;
+    color: #a07f54;
+    letter-spacing: 0.05rem;
+   
+
+}
+
+ .journey-subtitle {
+    font-weight: 600;
+    font-family: var(--primary-font);
+    color: #312020;
+    letter-spacing: 0.05rem;
+    font-size: 1.4rem;
+}
+
 .timeline {
     position: relative;
     max-width: 850px;
