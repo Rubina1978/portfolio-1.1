@@ -212,6 +212,7 @@ html {
 }
 .project-intro .card {
     border-radius: 30px;
+    width:400px;
 }
 .card-title {
     font-weight: 600;
@@ -374,6 +375,7 @@ html {
 border: 1px solid #312020;
 transition: 0.3s ease-in-out;
 border-radius: 30px;
+
 }
 
 .card-title {
@@ -404,6 +406,9 @@ border-radius: 30px;
 }
 /* projects */
 
+.project-cards-container {
+    width:100%;
+}
 .card-title {
     color:#312020;
 }

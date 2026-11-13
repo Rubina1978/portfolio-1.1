@@ -75,17 +75,39 @@ padding: 1rem;
     position: relative;
     max-width: 850px;
     margin: 50px auto;
+    
+    
 }
 
 .timeline::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50px;
     bottom: 0;
     width: 2px;
     background-color: #c9b8aa;
+    
+    
 }
+
+.timeline-content {
+    padding-left: 35px;
+}
+
+.timeline-content h4 {
+    position: relative;}
+
+
+.timeline-content h4::after {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    background-color: #c9b8aa;}
 
 
 @media (min-width: 992px) {
