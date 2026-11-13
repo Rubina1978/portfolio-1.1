@@ -83,8 +83,9 @@ padding: 1rem;
     font-weight: 600;
     font-family: var(--primary-font);
     color: #312020;
-    letter-spacing: 0.05rem;
-    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    font-style: normal;
 }
 
 .timeline {
@@ -99,7 +100,7 @@ padding: 1rem;
     content: "";
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 110px;
     bottom: 0;
     width: 2px;
     background-color: #c9b8aa;
@@ -144,5 +145,14 @@ padding: 1rem;
      
     }
 
+    .journey-subtitle {
+        font-size: 1.6rem;
+    }
+
+    
+
+    .timeline:before {
+        top: 90px;
+    }
    
 }

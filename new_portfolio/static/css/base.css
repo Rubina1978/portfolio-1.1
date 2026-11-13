@@ -448,14 +448,18 @@ border-radius: 30px;
    background-color: #f7ddbb;
    color: #312020;
    font-family: var(--secondary-font);
+   margin-top: 1.5rem;
 }
 
 .skills-card .card-body {
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.skills-card .card-text {
-    text-align: justify;
+ .skills .card-text {
+    justify-content: center;
+    
+    
+    
     
 }
 .skills-card h4 {
@@ -470,6 +474,7 @@ border-radius: 30px;
 }
 .skills-card p {
     font-family: var(--secondary-font);
+    font-size: 0.9rem;
     
 }
 
@@ -608,7 +613,7 @@ footer .custom-btn:hover {
     justify-content: center;
   }
 
-  
+ 
 }
 
 
@@ -659,6 +664,10 @@ footer .custom-btn:hover {
     .card.body {
         display:flex;
         flex-direction: column;
+    }
+
+    .skills-card p {
+        font-size: 1rem;
     }
 }
 @media (min-width: 992px) {
@@ -736,6 +745,11 @@ footer .custom-btn:hover {
    .trait-cards h6 {
     font-size: 1.2rem;
    }
+
+    .skills-card .card-body {
+    padding: 2rem;
+}
+
 
    .custom-btn {
     font-size: 1.2rem;
