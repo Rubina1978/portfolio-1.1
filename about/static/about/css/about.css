@@ -34,10 +34,9 @@ p {
 }
 
 
-.hero-image-column {
-    min-width: 0;
+.intro-image-column {
+    margin-top: 4rem;
 }
-
 
 .intro-about .row {
     margin-left: 0;
@@ -53,9 +52,37 @@ p {
 .intro-text-column {
     margin-top: 2rem;
     padding-top: 0;
-     font-size: 1.1rem;
+    
 }
 
+ .custom-btn-linkedin {
+    border: 1px solid #312020;
+    border-radius: 50px;
+    padding: 0.5rem 1.1rem;
+    min-height: 46px;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #312020;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 10rem;
+    gap: 0.5rem;
+     
+}
+.custom-btn-linkedin i {
+    color: #312020;
+}
+
+.custom-btn-linkedin:hover {
+    background-color:#f6f1ea;
+    border: 1px solid #312020;
+    color: #312020;
+    transition: 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+}
+
+/* strength cards */
 .card-what-i-bring {
 background-color: #f6f1ea;
 color: #312020;
@@ -69,28 +96,66 @@ padding: 1rem;
     font-style: italic;
 }
 
+/*  what im looking for */
+
+.looking-for {
+    background-color: #312020;
+    padding: 1rem;
+    border-radius: 30px; 
+    width: 100%;
+   
+    
+}
+
+.looking-for-text {
+    color:#f6f1ea;
+}
+
+.looking-for-text p {
+    color:#f6f1ea;
+    margin: 0;
+    padding: 0 0.5rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.looking-for .tech-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6rem;
+    text-align: center;
+    background-color:rgba(246, 225, 195, 0.3);
+    color: #f6f1ea;
+    border: 1px solid rgba(246, 225, 195, 0.4);
+}
+
 /* my journey part */
 
 .section-label-about {
     font-weight: 600;
     color: #a07f54;
     letter-spacing: 0.05rem;
+    
    
 
 }
 
- .journey-subtitle {
+
+ .journey-subtitle, .aims-section h2 {
     font-weight: 600;
     font-family: var(--primary-font);
     color: #312020;
     letter-spacing: 0.1rem;
     font-size: 1.3rem;
     font-style: normal;
+    
 }
 
 .timeline {
     position: relative;
-    max-width: 850px;
+    max-width: 900px;
     margin: 50px auto;
     
     
@@ -100,12 +165,16 @@ padding: 1rem;
     content: "";
     position: absolute;
     left: 0;
-    top: 110px;
+    top: 20px;
     bottom: 0;
     width: 2px;
-    background-color: #c9b8aa;
+    background-color: #bd661a;
     
     
+}
+
+.timeline-year {
+    color: #bd661a;
 }
 
 .timeline-content {
@@ -113,7 +182,11 @@ padding: 1rem;
 }
 
 .timeline-content h4 {
-    position: relative;}
+    position: relative;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #312020;
+}
 
 
 .timeline-content h4::after {
@@ -124,8 +197,14 @@ padding: 1rem;
     width: 14px;
     height: 14px;
     transform: rotate(45deg);
-    background-color: #c9b8aa;}
+    background-color: #bd661a;
+}
 
+@media (min-width: 768px) {
+   .hero-image-column {
+    margin-top: 0px;
+}
+}
 
 @media (min-width: 992px) {
     .intro-about .row {
@@ -145,14 +224,26 @@ padding: 1rem;
      
     }
 
-    .journey-subtitle {
-        font-size: 1.6rem;
+
+    .aims-section .container {
+        max-width: 1000px;
     }
 
-    
+    .looking-for-text p {
+        font-size: 1.1rem;
+    }
+    .journey-subtitle, .aims-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .looking-for {
+        padding: 1.2rem 1.4rem;
+    }
+
+
 
     .timeline:before {
-        top: 90px;
+        top: 10px;
     }
    
 }
