@@ -33,6 +33,7 @@ p {
     
 }
 
+ 
 
 .intro-image-column {
     margin-top: 4rem;
@@ -61,7 +62,7 @@ p {
     padding: 0.5rem 1.1rem;
     min-height: 46px;
     line-height: 1.1;
-    font-weight: 500;
+    font-weight: 600;
     color: #312020;
     display: inline-flex;
     align-items: center;
@@ -217,22 +218,34 @@ padding: 1rem;
         margin-top: 0;
         padding-top: 0;
     }
+
+    .intro-about p, .timeline-content{
+    font-size: 1rem;
+        color: #312020;
+        font-style: italic;
+        letter-spacing: 1px;
+        padding-top: 6px;
+
+}
    
     .card-what-i-bring {
     background-color: #f6f1ea;
     color: #312020;
     min-height: 200px;
     height: 100%;
+    
      
     }
-
+    .card-what-i-bring p {
+        font-size: 1.1rem;
+    }
 
     .aims-section .container {
         max-width: 1000px;
     }
 
     .looking-for-text p {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
     .journey-subtitle, .aims-section h2 {
         font-size: 1.7rem;
@@ -245,7 +258,7 @@ padding: 1rem;
 
 
     .timeline:before {
-        top: 10px;
+        top: 40px;
     }
    
 }

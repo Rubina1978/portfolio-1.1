@@ -709,11 +709,19 @@ footer .custom-btn:hover {
         font-size: 2rem;
     }
 
+    .trait-cards .card-text {
+        font-family: 1.1rem;
+    }
+
     .custom-btn a {
     font-size: 1rem;
 }
     .projects-intro h2 {
         color:#312020;
+    }
+
+    .project-cards p {
+        font-size: 1.1rem;
     }
     .section-intro {
         font-size: 1.1rem;
