@@ -540,6 +540,12 @@ footer  .custom-btn {
                 transform 0.3s ease;
 }
 
+footer .custom-bth:active, .custom-btn:focus {
+    border:#f3c383 1px solid;
+    background-color:#f3c383!important;
+    color:#312020;
+}
+
 
 footer .custom-btn:hover {
     border:#f3c383 1px solid;
