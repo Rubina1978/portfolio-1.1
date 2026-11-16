@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="form py-5">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+            <h1 class="text-center text-center mt-5 pt-2 mb-5">Contact Me</h1>
+
+            <div class="col-12 col-lg-6">
+                
+                {% if submitted %}
+                    <p>Thanks, {{ name }}. Your message has been received.</p>
+                {% endif %}
+
+                <form method="post" class="contact-form">
+                    {% csrf_token %}
+
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6">
+                            <label for="{{ form.name.id_for_label }}" class="d-block mb-2 fw-semibold">{{ form.name.label }}</label>
+                            {{ form.name }}
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <label for="{{ form.email.id_for_label }}" class="d-block mb-2 fw-semibold">{{ form.email.label }}</label>
+                            {{ form.email }}
+                        </div>
+
+                        <div class="col-12">
+                            <label for="{{ form.enquiry_type.id_for_label }}" class="d-block mb-2 fw-semibold">{{ form.enquiry_type.label }}</label>
+                            {{ form.enquiry_type }}
+                        </div>
+
+                        <div class="col-12">
+                            <label for="{{ form.subject.id_for_label }}" class="d-block mb-2 fw-semibold">{{ form.subject.label }}</label>
+                            {{ form.subject }}
+                        </div>
+
+                        <div class="col-12">
+                            <label for="{{ form.message.id_for_label }}" class="d-block mb-2 fw-semibold">{{ form.message.label }}</label>
+                            {{ form.message }}
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark mt-3">Send</button>
+                </form>
+            </div>
+
+            <div class="col-12 col-lg-5">
+                <div class="border rounded p-4 mt-5 mt-lg-0">
+                    <h3>More info</h3>
+                    <p>Email: hello@example.com</p>
+                    <p>Location: London</p>
+                    <p>Available for freelance work</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

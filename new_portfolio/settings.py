@@ -48,10 +48,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary_storage',
     'cloudinary',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'django_summernote',
 
     'home_page',
     'about',
+    'contact_form',
 ]
 
 MIDDLEWARE = [
@@ -84,6 +87,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'new_portfolio.wsgi.application'
+
+CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 
 # Database

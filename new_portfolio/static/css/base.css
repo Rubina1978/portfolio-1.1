@@ -106,7 +106,7 @@ body {
 }
 
 /* introduction */
-.me {
+.me, .form {
     background: linear-gradient(#F6E1C3 0%,  #f6f1ea 60%, #ffff 100%);
 }
 
@@ -558,6 +558,29 @@ footer .custom-btn:hover {
   line-height: 1;
   display: block;
 }
+
+
+form {
+max-width: 500px;
+margin: 0 auto;
+padding: 1.5rem;
+background:linear-gradient(350deg,#af9470 0%, #ebcda6 60%  );
+border-radius: 30px;
+}
+form input,
+form select,
+form textarea {
+    width: 100%;
+    display: block;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form textarea {
+    min-height: 150px;
+}
+
 
 @media (max-width: 767.9px) {
     .action-buttons .custom-btn-git,
