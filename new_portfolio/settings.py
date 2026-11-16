@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'new_portfolio.wsgi.application'
 CRISPY_ALLOWED_TEMPLATE_PACK = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
-
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 

@@ -73,17 +73,17 @@
           <div class="collapse navbar-collapse mt-4 mb-4" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="{% url 'home'%}">Home</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'home' %}active{% endif %}" aria-current="page "  href="{% url 'home'%}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">About</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'about' %}active{% endif %}"  href="{% url 'about' %}">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                <a class="nav-link {% if request.resolver_match.url_name == 'contact' %}active{% endif %}"  href="{% url 'contact' %}">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="btn btn-primary custom-btn-nav" href="#">
-                  <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                <a class="btn btn-primary custom-btn-nav" href="{% static 'documents/cv.pdf' %}" target="_blank" rel="noopener">
+                  <i class="fa-solid fa-file-arrow-down"></i> My CV
                 </a>
               </li>
             </ul>
