@@ -9,6 +9,9 @@
 
 }
 
+main {
+    padding-top: 00px;
+}
 body {
  background: #ffffff
 
@@ -55,9 +58,9 @@ body {
     gap: 1rem;
     }
 
-.nav-item {
-    width: 100;
-}
+/* .nav-item {
+    width: 100%;
+} */
 
 .nav-link {
     padding: 0.5rem ;
@@ -138,6 +141,17 @@ body {
 }
 .fa-file-arrow-down {
     color: #F6E1C3;
+}
+
+.message-container{
+    position: fixed;
+    top: 152px;
+    right: 15px;
+    z-index: 9999999999999;
+}
+
+.message {
+    border-radius: 10px;
 }
 .image-me, .profile-image {
     margin-top: 10px;

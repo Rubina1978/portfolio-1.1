@@ -12,6 +12,7 @@
                 {% if submitted %}
                     <p>Thanks, {{ name }}. Your message has been received.</p>
                 {% endif %}
+                
 
                 <form method="post" class="contact-form">
                     {% csrf_token %}
