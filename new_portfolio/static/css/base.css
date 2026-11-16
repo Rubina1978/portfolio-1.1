@@ -81,6 +81,9 @@ body {
 
     width:100%;
     justify-content: center;
+    transition: background-color 0.3s ease,
+                color 0.5s ease,
+                transform 0.5s ease;
 }
 
 .navbar-toggler {
@@ -130,7 +133,8 @@ body {
 
 .custom-btn-nav:hover {
     background-color: #bd661a;
-    border:1px solid#744d35
+    border:1px solid#744d35;
+    
 }
 .custom-btn-nav a {
     text-decoration: none;
@@ -320,10 +324,10 @@ html {
    font-size: 0.9rem;
 }
 
-.custom-btn-git:hover, .custom-btn-hire:hover {
+.custom-btn-git:hover, .custom-btn-hire:hover, .custom-btn-nav:hover {
     background-color: #bd661a;
     color: white;
-    transition: 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.3s ease-in-out;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
    
 
@@ -580,7 +584,9 @@ margin: 0 auto;
 padding: 1.5rem;
 background:linear-gradient(350deg,#af9470 0%, #ebcda6 60%  );
 border-radius: 30px;
+
 }
+
 form input,
 form select,
 form textarea {
@@ -589,12 +595,88 @@ form textarea {
     padding: 10px 12px;
     border: 1px solid #ccc;
     border-radius: 8px;
+    
 }
+
+form input:hover,
+form select:hover,
+form textarea:hover {
+  border: 1px solid #312020;
+  transition: border 0.3s ease,
+                color 0.3s ease;
+  box-shadow:  0 1px 4px 2px rgba(49, 32, 32, 0.3);
+               
+}
+
 
 form textarea {
     min-height: 150px;
 }
 
+form label {
+    font-family: var(--secondary-font);
+    font-style: italic;
+    color: #312020;
+    
+}
+
+.contact h6 {
+    font-family: var(--secondary-font);
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    margin-left: 1rem
+}
+
+.contact a {
+    text-decoration: none;
+    color: #312020;
+    font-weight: 500;
+    margin-left: 1rem;
+    
+}
+
+
+ .contact{
+    margin-bottom: 0.6rem;
+    
+    
+   
+}
+
+.contact-title{
+    font-family: var(--primary-font);
+    color: #312020;
+    font-weight: 600;
+
+}
+.contact-subheading {
+    font-family: var(--secondary-font);
+    color:#312020;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-style: italic;
+    letter-spacing: 0.02rem;
+    
+}
+
+.contact-container, .work-container  {
+    background:linear-gradient(300deg,#af9470 0%, #ebcda6 40%  );
+border-radius: 40px;
+padding:0.5rem;
+}
+
+.little-word h4 {
+    font-family: var(--primary-font);
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.little-word {
+    padding: 0.4rem;
+    color:#312020;
+    font-weight: 500;
+}
 
 @media (max-width: 767.9px) {
     .action-buttons .custom-btn-git,
